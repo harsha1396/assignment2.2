@@ -1,0 +1,29 @@
+1.HDFS:
+
+HDFS refers to Hadoop Distributed File System.
+It is the primary storage system used by Hadoop applications.
+HDFS is a distributed file system that provides high-performance access to data across Hadoop clusters.
+Like other Hadoop-related technologies, HDFS has become a key tool for managing big data and supporting big data analytics applications.
+HDFS is deployed on low-cost commodity hardware hence server failures are common. 
+When HDFS takes in data, it breaks the information down into separate pieces and distributes them to different nodes in a cluster, allowing for parallel processing. 
+HDFS is built to support applications with large data sets, including individual files that reach into the terabytes.
+
+2.HADOOP CLUSTER:
+
+A Hadoop cluster is a special type of computational cluster designed specifically for storing and analyzing huge amounts of unstructured data in a distributed 
+computing environment. 
+Such clusters run Hadoop's open source distributed processing software on low-cost commodity computers. 
+Typically one machine in the cluster is designated as the NameNode and another machine as the JobTracker which are the masters. 
+The rest of the machines in the cluster act as both DataNode and TaskTracker which are referred as the slaves. 
+Hadoop clusters are often referred to as "shared nothing" systems because the only thing that is shared between nodes is the network that connects them.
+Hadoop clusters are known for boosting the speed of data analysis applications and also they are highly scalable.
+
+3.HDFS BLOCKS:
+
+Hadoop distributed file system also stores the data in terms of blocks,however the block size in HDFS is very large. 
+The default size of HDFS block is 64MB and hence the files are split into 64MB blocks and then stored into the hadoop filesystem. 
+The hadoop application is responsible for distributing the data blocks across multiple nodes. 
+The blocks are of fixed size, so it is very easy to calculate the number of blocks that can be stored on a disk.
+HDFS block concept simplifies the storage of the datanodes.
+If the size of the file is less than the HDFS block size, then the file does not occupy the complete block storage.
+Blocks are easy to replicate between the datanodes and thus provide fault tolerance and high availability.
