@@ -1,0 +1,6 @@
+1)HDFS:
+HDFS is a Java-based file system that provides scalable and reliable data storage, and it was designed to span large clusters of commodity servers. 
+HDFS has demonstrated production scalability of up to 200 PB of storage and a single cluster of 4500 servers, supporting close to a billion files and blocks.
+HDFS is a scalable, fault-tolerant, distributed storage system that works closely with a wide variety of concurrent data access applications, coordinated by YARN. 
+HDFS will just work under a variety of physical and systemic circumstances. 
+By distributing storage and computation across many servers, the combined storage resource can grow linearly with demand while remaining economical at every amount of storage.
